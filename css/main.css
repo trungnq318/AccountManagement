@@ -1,0 +1,85 @@
+#mainCol1,
+#mainCol2 {
+    height: 691px;
+    padding: 0;
+}
+
+i:hover {
+    background-color: rgb(242, 222, 222);
+}
+
+#mainCol1Name:hover {
+    background-color: rgb(242, 222, 222);
+}
+
+#mainCol1Account:hover {
+    background-color: rgb(242, 222, 222);
+}
+
+#mainCol1Department:hover {
+    background-color: rgb(242, 222, 222);
+}
+
+#mainCol1 div {
+    height: 60px;
+}
+
+#mainCol1 i {
+    font-size: 20px;
+    padding: 10px 5px 10px;
+}
+
+#mainRow1 {
+    height: 20%;
+}
+
+#mainRow2 {
+    height: 10%;
+}
+
+#mainRow3 {
+    height: 4%;
+}
+
+#mainRow4 {
+    height: 56%;
+}
+
+#mainRow5 {
+    height: 10%;
+}
+
+#mainRow1 b {
+    line-height: 138px;
+    font-size: 48px;
+    padding-left: 20px;
+}
+
+#mainRow2 select {
+    border-width: 2px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#mainRow2 i {
+    font-size: 30px;
+    padding: 10px 20px 10px;
+}
+
+#mainRow3 input {
+    border-width: 2px;
+}
+
+#mainRow3 i:not(#mainRow3Col1 i) {
+    font-size: 30px;
+    padding: 10px 5px 10px;
+}
+
+#table {
+    margin-left: 15px;
+}
+
+#mainRow4 i {
+    font-size: 20px;
+    padding: 10px 5px 10px;
+}

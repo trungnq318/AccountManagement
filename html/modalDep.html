@@ -1,0 +1,39 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+
+        <!-- header -->
+        <div class="modal-header">
+            <h5 class="modal-title" id="titleModalDep" style="text-align: center;font-size: 30px;">Create New Department</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- body -->
+        <div class="modal-body">
+            <div class="modal-container">
+
+                <input type="hidden" id="departmentId" name="departmentId">
+
+                <label for="name"><b>Name: </b></label>
+                <input type="text" style="width: 480px;" style="display: block;" placeholder="Enter department Name..." name="name" id="name"><br>
+
+                <label for="type"><b>Type: </b></label>
+                <select id="type" style="margin-left: 8px;width: 480px;" name="type">
+                <option value="" disabled selected hidden>Type</option> 
+                <option value="DEV">DEV</option>
+                <option value="TEST">TEST</option>
+                <option value="ScrumMaster">ScrumMaster</option>
+                <option value="PM">PM</option>
+              </select>
+                <input type="hidden" name="typeInput" id="typeInput">
+                <span style="color: red;" id="errorMessageDep"></span>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="saveDep">Save</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+
+        </div>
+    </div>
+</div>

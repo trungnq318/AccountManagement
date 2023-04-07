@@ -1,0 +1,59 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+
+        <!-- header -->
+        <div class="modal-header">
+            <h5 class="modal-title" id="titleModalAccount" style="text-align: center;font-size: 30px;">Create New Account</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- body -->
+        <div class="modal-body">
+            <div class="modal-container">
+
+                <input type="hidden" id="accountId" name="accountId">
+
+                <label for="username"><b>Username: </b></label>
+                <input type="text" placeholder="Enter Username..." name="username" id="username"><br>
+
+                <label for="firstName"><b>First Name: </b></label>
+                <input type="text" placeholder="Enter First Name..." name="firstName" id="firstName">
+
+                <label for="lastName"><b>Last Name: </b></label>
+                <input type="text" placeholder="Enter Last Name..." name="lastName" id="lastName"><br>
+
+                <label for="role"><b>Role: </b></label>
+                <select id="role" name="role" required>
+                            <option value="" disabled selected hidden> - Pick Role- </option>
+                            <option value="ADMIN">Admin</option>
+                            <option value="MANAGER">Manager</option>
+                            <option value="EMPLOYEE">Employee</option>
+                          </select><br>
+                <input type="hidden" name="roleInput" id="roleInput">
+
+                <label for="department"><b>department: </b></label>
+                <select id="department" name="department" required>
+                            <option value="" disabled selected hidden> - Pick Department - </option>
+                            <option value="1">Marketing</option>
+                            <option value="2">Technical</option>
+                            <option value="3">Sale</option>
+                            <option value="4">Administration</option>
+                            <option value="5">HR</option>
+                            <option value="6">Training</option>
+                            <option value="7">Accounting</option>
+                            <option value="8">Security</option>
+                            <option value="9">IT</option>               
+                            <option value="10">Financial</option>
+                          </select>
+                <input type="hidden" name="departmentInput" id="departmentInput">
+                <span style="color: red;" id="errorMessage"></span>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="saveAccount">Save</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        </div>
+    </div>
+</div>

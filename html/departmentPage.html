@@ -1,0 +1,84 @@
+<!-- cột 2 row tiêu đề -->
+<div class="container-fluid " id="mainRow1">
+    <b>DEPARTMENT LIST</b>
+</div>
+
+<!-- cột 2 row filter -->
+<div class="container-fluid " id="mainRow2">
+
+    <label for="minDate" style="margin-left: 15px;">Min Date :</label>
+    <input type="date" id="minDate" name="minDate">
+    <label for="maxDate" style="margin-left: 30px;">Max Date :</label>
+    <input type="date" id="maxDate" name="maxDate">
+
+    <select id="typeFilter" name="typeFilter">
+                <option value="" disabled selected hidden>Type</option> 
+                <option value="DEV">DEV</option>
+                <option value="TEST">TEST</option>
+                <option value="ScrumMaster">ScrumMaster</option>
+                <option value="PM">Employee</option>
+              </select>
+    <input type="hidden" name="filterByType" id="filterByType">
+
+    <i class="fa fa-filter" onclick="filterDep()" aria-hidden="true"></i>
+</div>
+
+<!-- cột 2 row tìm kiếm và bộ công cụ thêm xóa và refresh -->
+<div class="container-fluid " id="mainRow3">
+    <div class="col-xs-10" id="mainRow3Col1">
+        <input type="text" id="searchDep" placeholder="Search by name...">
+
+        <button type="button" onClick="seachDep()" class="btn btn-primary">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+
+    </div>
+    <div class="col-xs-2 " id="mainRow3Col2">
+        <i class="fa fa-refresh" aria-hidden="true" id="refreshDepIcon"></i>
+        <i class="fa fa-plus-square" aria-hidden="true" data-toggle="modal" id="createDepIcon"></i>
+        <i class="fa fa-trash-o" aria-hidden="true" id="deleteDepsIcon"></i>
+    </div>
+</div>
+
+<!-- cột 2 row table -->
+<div class="container-fluid " id="mainRow4">
+    <table class="table table-bordered" id="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name
+                    <i class="fa fa-sort" onClick="changeSortDep('name')" aria-hidden=" true "></i></th>
+                <th>Total Member<i class="fa fa-sort " onClick="changeSortDep('totalMember')" aria-hidden="true "></i></th>
+                <th>Type</th>
+                <th>Create date MM-dd-yyyy<i class="fa fa-sort " onClick="changeSortDep('createdDate') " aria-hidden="true "></i></th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tr>
+                        <td><input type="checkbox " id="user1 " name="user1 " value="user1 "></td>
+                        <td>username1</td>
+                        <td>name1</td>
+                        <td>role1</td>
+                        <td>department1</td>
+                        <td>
+                            <i class="fa fa-pencil " aria-hidden="true "></i>
+                            <i class="fa fa-trash-o " aria-hidden="true "></i>
+                        </td>
+                    </tr> -->
+        </tbody>
+    </table>
+</div>
+
+<!-- cột 2 row đánh số trang -->
+<div class="container-fluid " id="mainRow5 ">
+    <nav aria-label="Page navigation example " style="position: relative; ">
+        <ul class="pagination " id="paginationDeps" style="position: absolute;right:30px;margin-top: 0; ">
+            <!-- <li class="page-item active"><a class="page-link" onClick="changePage(1)">1</a></li>
+            <li class="page-item "><a class="page-link" onClick="changePage(2)">2</a></li>
+            <li class="page-item "><a class="page-link" onClick="changePage(3)">3</a></li>
+            <li class="page-item "><a class="page-link" onClick="changePage(4)">4</a></li>
+            <li class="page-item"><a class="page-link" onClick="nextPageAccounts()">Next</a></li> -->
+        </ul>
+    </nav>
+</div>

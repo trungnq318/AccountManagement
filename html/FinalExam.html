@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Exam</title>
+
+    <!-- import bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- import css -->
+    <link rel="stylesheet" href="..//css/FinalExam.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!-- <link rel="stylesheet" href="/css/modal.css"> -->
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="main">
+        <div class="container-fluid">
+
+            <!-- cột 1 hello Duy, account, department -->
+            <div class="col-xs-1 bd1px" id="mainCol1">
+                <div class="container-fluid bd1px" id="mainCol1Name">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    <b id="hello"></b>
+                </div>
+                <div class="container-fluid bd1px" id="mainCol1Account">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <b>Account</b>
+                </div>
+                <div class="container-fluid bd1px" id="mainCol1Department">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <b>Department</b>
+
+                </div>
+            </div>
+
+            <!-- cột 2 chứa bảng -->
+            <div class="col-xs-11 bd1px" id="mainCol2">
+            </div>
+
+            <!-- Modal Account -->
+            <div id="myModal" class="modal fade" tabindex="-1">
+
+            </div>
+
+            <!-- Modal Dep -->
+            <div id="myModalDep" class="modal fade" tabindex="-1">
+
+            </div>
+
+            <!-- Modal Dep -->
+            <div id="myModalAddAcc" class="modal fade" tabindex="-1">
+
+            </div>
+
+        </div>
+        <div class="footer"></div>
+</body>
+
+<!-- import JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- import bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- import javascript -->
+<script src="/js/storage.js"></script>
+<script src="../js/FinalExam.js"></script>
+
+</html>

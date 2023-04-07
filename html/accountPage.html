@@ -1,0 +1,90 @@
+<!-- cột 2 row tiêu đề -->
+<div class="container-fluid " id="mainRow1">
+    <b>ACCOUNT LIST</b>
+</div>
+
+<!-- cột 2 row filter -->
+<div class="container-fluid " id="mainRow2">
+    <select id="roleFilter" name="roleFilter">
+                <option value="" disabled selected hidden>Role</option> 
+                <option value="ADMIN">Admin</option>
+                <option value="MANAGER">Manager</option>
+                <option value="EMPLOYEE">Employee</option>
+              </select>
+    <input type="hidden" name="filterByRole" id="filterByRole">
+    <select id="departmentFilter" name="departmentFilter">
+                <option value="" disabled selected hidden>Department</option>
+                <option value="1">Marketing</option>
+                <option value="2">Technical</option>
+                <option value="3">Sale</option>
+                <option value="4">Administration</option>
+                <option value="5">HR</option>
+                <option value="6">Training</option>
+                <option value="7">Accounting</option>
+                <option value="8">Security</option>
+                <option value="9">IT</option>               
+                <option value="10">Financial</option>
+              </select>
+    <input type="hidden" name="filterByDepartment" id="filterByDepartment">
+    <i class="fa fa-filter" onclick="filterAccount()" aria-hidden="true"></i>
+</div>
+
+<!-- cột 2 row tìm kiếm và bộ công cụ thêm xóa và refresh -->
+<div class="container-fluid " id="mainRow3">
+    <div class="col-xs-10" id="mainRow3Col1">
+        <input type="text" id="searchAccount" placeholder="Search by name...">
+
+        <button type="button" onClick="seachAccount()" class="btn btn-primary">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+
+    </div>
+    <div class="col-xs-2 " id="mainRow3Col2">
+        <i class="fa fa-refresh" aria-hidden="true" id="refreshAccountIcon"></i>
+        <i class="fa fa-plus-square" aria-hidden="true" data-toggle="modal" id="createAccountIcon"></i>
+        <i class="fa fa-trash-o" aria-hidden="true" id="deleteAccountsIcon"></i>
+    </div>
+</div>
+
+<!-- cột 2 row table -->
+<div class="container-fluid " id="mainRow4">
+    <table class="table table-bordered" id="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Username
+                    <i class="fa fa-sort" onClick="changeSort('username')" aria-hidden=" true "></i></th>
+                <th>Fullname<i class="fa fa-sort " onClick="changeSort('firstName')" aria-hidden="true "></i></th>
+                <th>Role</th>
+                <th>Department<i class="fa fa-sort " onClick="changeSort('departmentName') " aria-hidden="true "></i></th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tr>
+                        <td><input type="checkbox " id="user1 " name="user1 " value="user1 "></td>
+                        <td>username1</td>
+                        <td>name1</td>
+                        <td>role1</td>
+                        <td>department1</td>
+                        <td>
+                            <i class="fa fa-pencil " aria-hidden="true "></i>
+                            <i class="fa fa-trash-o " aria-hidden="true "></i>
+                        </td>
+                    </tr> -->
+        </tbody>
+    </table>
+</div>
+
+<!-- cột 2 row đánh số trang -->
+<div class="container-fluid " id="mainRow5 ">
+    <nav aria-label="Page navigation example " style="position: relative; ">
+        <ul class="pagination " id="paginationAccounts" style="position: absolute;right:30px;margin-top: 0; ">
+            <!-- <li class="page-item active"><a class="page-link" onClick="changePage(1)">1</a></li>
+            <li class="page-item "><a class="page-link" onClick="changePage(2)">2</a></li>
+            <li class="page-item "><a class="page-link" onClick="changePage(3)">3</a></li>
+            <li class="page-item "><a class="page-link" onClick="changePage(4)">4</a></li>
+            <li class="page-item"><a class="page-link" onClick="nextPageAccounts()">Next</a></li> -->
+        </ul>
+    </nav>
+</div>
